@@ -1,0 +1,35 @@
+Pengenalan Docker
+
+======================
+
+Docker adalah platform open-source yang memungkinkan pengembangan, pengiriman, dan menjalankan aplikasi menggunakan kontainer.
+
+Kontainer adalah unit perangkat lunak yang membungkus kode aplikasi beserta semua dependensi yang dibutuhkan, seperti runtime, sistem operasi, library, dan alat-alat lainnya.
+
+=====================
+
+Berikut adalah beberapa konsep penting dalam Docker:
+
+1.Image:
+    Image adalah file read-only yang berisi kode, runtime, dan dependensi aplikasi.
+    Image digunakan sebagai cetak biru untuk membuat kontainer.
+    Image dapat dibuat secara manual atau diunduh dari Docker Registry.
+
+2.Kontainer:
+    Kontainer adalah instance yang dibuat dari image.
+    Kontainer menjalankan aplikasi secara terisolasi dari lingkungan host.
+    Kontainer dapat dibuat, dijalankan, dihentikan, dipindahkan, dan dihapus.
+3.Docker Engine:
+    Docker Engine adalah platform runtime yang menjalankan dan mengelola kontainer.
+    Docker Engine terdiri dari Docker Daemon, REST API, dan command-line interface (CLI).
+4.Docker Registry:
+    Docker Registry adalah tempat penyimpanan dan distribusi image Docker.
+    Docker Hub adalah registri publik yang disediakan oleh Docker, tetapi Anda juga dapat membuat registri pribadi.
+5.Dockerfile:
+    Dockerfile adalah file teks yang berisi instruksi untuk membuat image Docker.
+    Dockerfile menentukan lingkungan, dependencies, dan konfigurasi aplikasi yang akan dibungkus dalam image.
+6.Docker Compose:
+    Docker Compose adalah alat untuk mendefinisikan dan menjalankan aplikasi multi-kontainer.
+    Dengan Docker Compose, Anda dapat menentukan layanan, jaringan, dan volume yang dibutuhkan oleh aplikasi Anda dalam satu file konfigurasi.
+
+==================================================================
