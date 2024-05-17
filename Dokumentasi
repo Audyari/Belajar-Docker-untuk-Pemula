@@ -1,30 +1,9 @@
-Virtual Machine vs Container
+Menginstall Docker
 
-=================================
+=====================
 
-Arsitektur:
+1. https://www.docker.com/products/docker-desktop/
+2.Unduh dan jalankan installer Docker Desktop untuk Windows
+3.Ikuti petunjuk instalasi dan jalankan Docker Desktop
 
-    1. Virtual Machine (VM): VM memiliki arsitektur yang lengkap, termasuk sistem operasi (OS) guest, kernel, dan aplikasi. VM dijalankan di atas hypervisor yang bertanggung jawab untuk mengatur sumber daya hardware.
-    2. Container: Container berbagi kernel OS host dan hanya membundel aplikasi beserta dependensinya. Container tidak memerlukan sistem operasi guest yang terpisah.
-
-Ukuran dan Kecepatan:
-
-    1.Virtual Machine (VM): VM cenderung lebih besar dalam ukuran karena harus memuat sistem operasi guest secara penuh.
-    2.Container: Container umumnya lebih kecil dan lebih ringan karena tidak perlu memuat sistem operasi secara penuh.
-
-Startup Time:
-
-    1.Virtual Machine (VM): Waktu startup VM relatif lebih lama karena harus memulai seluruh sistem operasi guest.
-    2.Container: Kontainer dapat dimulai dalam hitungan detik karena tidak perlu memulai sistem operasi secara lengkap.
-
-Isolasi:
-
-    1.Virtual Machine (VM): VM memberikan isolasi yang lebih kuat karena setiap VM memiliki sistem operasi yang terpisah.
-    2.Container: Kontainer memiliki isolasi yang lebih lemah karena berbagi kernel sistem operasi host.
-
-Portabilitas:
-
-    1.Virtual Machine (VM): VM kurang portabel karena terikat dengan hypervisor tertentu.
-    2.Container: Kontainer lebih portabel karena dapat berjalan di berbagai platform yang mendukung Docker atau teknologi kontainer lainnya.
-
-==========================================================================
+=============================
