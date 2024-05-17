@@ -1,35 +1,30 @@
-Pengenalan Docker
+Virtual Machine vs Container
 
-======================
+=================================
 
-Docker adalah platform open-source yang memungkinkan pengembangan, pengiriman, dan menjalankan aplikasi menggunakan kontainer.
+Arsitektur:
 
-Kontainer adalah unit perangkat lunak yang membungkus kode aplikasi beserta semua dependensi yang dibutuhkan, seperti runtime, sistem operasi, library, dan alat-alat lainnya.
+    1. Virtual Machine (VM): VM memiliki arsitektur yang lengkap, termasuk sistem operasi (OS) guest, kernel, dan aplikasi. VM dijalankan di atas hypervisor yang bertanggung jawab untuk mengatur sumber daya hardware.
+    2. Container: Container berbagi kernel OS host dan hanya membundel aplikasi beserta dependensinya. Container tidak memerlukan sistem operasi guest yang terpisah.
 
-=====================
+Ukuran dan Kecepatan:
 
-Berikut adalah beberapa konsep penting dalam Docker:
+    1.Virtual Machine (VM): VM cenderung lebih besar dalam ukuran karena harus memuat sistem operasi guest secara penuh.
+    2.Container: Container umumnya lebih kecil dan lebih ringan karena tidak perlu memuat sistem operasi secara penuh.
 
-1.Image:
-    Image adalah file read-only yang berisi kode, runtime, dan dependensi aplikasi.
-    Image digunakan sebagai cetak biru untuk membuat kontainer.
-    Image dapat dibuat secara manual atau diunduh dari Docker Registry.
+Startup Time:
 
-2.Kontainer:
-    Kontainer adalah instance yang dibuat dari image.
-    Kontainer menjalankan aplikasi secara terisolasi dari lingkungan host.
-    Kontainer dapat dibuat, dijalankan, dihentikan, dipindahkan, dan dihapus.
-3.Docker Engine:
-    Docker Engine adalah platform runtime yang menjalankan dan mengelola kontainer.
-    Docker Engine terdiri dari Docker Daemon, REST API, dan command-line interface (CLI).
-4.Docker Registry:
-    Docker Registry adalah tempat penyimpanan dan distribusi image Docker.
-    Docker Hub adalah registri publik yang disediakan oleh Docker, tetapi Anda juga dapat membuat registri pribadi.
-5.Dockerfile:
-    Dockerfile adalah file teks yang berisi instruksi untuk membuat image Docker.
-    Dockerfile menentukan lingkungan, dependencies, dan konfigurasi aplikasi yang akan dibungkus dalam image.
-6.Docker Compose:
-    Docker Compose adalah alat untuk mendefinisikan dan menjalankan aplikasi multi-kontainer.
-    Dengan Docker Compose, Anda dapat menentukan layanan, jaringan, dan volume yang dibutuhkan oleh aplikasi Anda dalam satu file konfigurasi.
+    1.Virtual Machine (VM): Waktu startup VM relatif lebih lama karena harus memulai seluruh sistem operasi guest.
+    2.Container: Kontainer dapat dimulai dalam hitungan detik karena tidak perlu memulai sistem operasi secara lengkap.
 
-==================================================================
+Isolasi:
+
+    1.Virtual Machine (VM): VM memberikan isolasi yang lebih kuat karena setiap VM memiliki sistem operasi yang terpisah.
+    2.Container: Kontainer memiliki isolasi yang lebih lemah karena berbagi kernel sistem operasi host.
+
+Portabilitas:
+
+    1.Virtual Machine (VM): VM kurang portabel karena terikat dengan hypervisor tertentu.
+    2.Container: Kontainer lebih portabel karena dapat berjalan di berbagai platform yang mendukung Docker atau teknologi kontainer lainnya.
+
+==========================================================================
