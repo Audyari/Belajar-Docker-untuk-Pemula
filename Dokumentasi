@@ -1,24 +1,10 @@
-Membuat Container
+Menjalankan Container
 
-======================
+========================
 
-1. docker container ls : atau docker container ls --all
-    Perintah docker container ls adalah perintah dalam Docker yang digunakan untuk melihat daftar 
-    container Docker yang sedang berjalan (aktif).
-
-
-===============================
-
-CARA BIKIN CONTAINER :
-
-1. # Membuat container baru dengan nama "mongoserver1"
-docker container create --name mongoserver1 mongo:4.1
-
-# Menjalankan container "mongoserver1"
-docker container start mongoserver1
-
-# Melihat daftar container yang sedang berjalan
-docker container ls
+1. docker container start mongoserver1
+2. docker container ls --all
+3. docker container exec -it mongoserver1 bash
 
 
-=================================
+===================================
