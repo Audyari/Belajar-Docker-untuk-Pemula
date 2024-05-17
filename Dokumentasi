@@ -1,18 +1,24 @@
-Mengambil Image dari Registry
+Membuat Container
 
-================================
+======================
 
-1. cek image yg teristall di pc :
-    docker images
+1. docker container ls : atau docker container ls --all
+    Perintah docker container ls adalah perintah dalam Docker yang digunakan untuk melihat daftar 
+    container Docker yang sedang berjalan (aktif).
 
-2. test install mogoDB
-    * docker pull mongo 
-    kalo mau menurut versinya seperti ini
-    *docker pull mongo:4.1
 
-=========================
+===============================
 
-1. "docker images" : Perintah ini akan menampilkan daftar Image yang tersedia di mesin lokal Anda, termasuk Image 'mongo'.
-2. "docker ps" : Perintah docker ps adalah salah satu perintah dasar dalam Docker yang digunakan untuk melihat daftar kontainer Docker yang sedang berjalan.
+CARA BIKIN CONTAINER :
 
-===========================
+1. # Membuat container baru dengan nama "mongoserver1"
+docker container create --name mongoserver1 mongo:4.1
+
+# Menjalankan container "mongoserver1"
+docker container start mongoserver1
+
+# Melihat daftar container yang sedang berjalan
+docker container ls
+
+
+=================================
