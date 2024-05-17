@@ -1,9 +1,22 @@
-Menghapus Image
+Membuat Image dengan Dockerfile
 
-========================
+============================
 
-1. docker image ls
-2. docker image ls -a 
-3. docker image rm mongo:4.1
+studi kasus : 
 
-=======================
+1. download https://github.com/ProgrammerZamanNow/belajar-docker
+2. terus buat dengan nama file Dockerfile
+    isi nya :
+
+  FROM golang:1.11.4
+
+  COPY main.go /app/main.go
+
+  CMD ["go", "run", "/app/main.go"]
+
+3. terus buat image nya : "docker build -t nama-image ."
+4. docker images
+5. docker container create --name App1 -p 8080:8080 nama-image   
+6. docker start 6b62a2d8e116
+
+======================================
