@@ -1,11 +1,9 @@
-Membuka Port untuk Container
+Menghapus Image
 
-==============================
+========================
 
-1. docker container run -d --name mongoserver1 -p 8080:27017 mongo:4.1
-2. docker container ls --all
-3. docker container start mongoserver1
-4. docker container stop mongoserver1
+1. docker image ls
+2. docker image ls -a 
+3. docker image rm mongo:4.1
 
-
-==============================
+=======================
