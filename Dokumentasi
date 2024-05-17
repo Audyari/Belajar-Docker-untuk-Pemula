@@ -1,22 +1,19 @@
-Membuat Image dengan Dockerfile
+Mengupload Image ke Registry
 
-============================
+=================================
 
-studi kasus : 
+kalo bisa dari awal dibuat tag nya atau versi
 
-1. download https://github.com/ProgrammerZamanNow/belajar-docker
-2. terus buat dengan nama file Dockerfile
-    isi nya :
+1. pertama buat repository dulu di :
+    https://hub.docker.com/repository/create?namespace=butocakil
 
-  FROM golang:1.11.4
+2. docker login
+3. docker images
+4. docker build -t butocakil/app-1-pertama:latest .
+5. docker tag nama-image:latest butocakil/app-1-pertama
+6. docker push butocakil/app-1-pertama
 
-  COPY main.go /app/main.go
 
-  CMD ["go", "run", "/app/main.go"]
+==================================================
 
-3. terus buat image nya : "docker build -t nama-image ."
-4. docker images
-5. docker container create --name App1 -p 8080:8080 nama-image   
-6. docker start 6b62a2d8e116
 
-======================================
