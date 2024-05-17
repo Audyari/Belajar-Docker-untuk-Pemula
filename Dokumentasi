@@ -1,11 +1,14 @@
-Image
+Container
 
-===================
+=================
 
-1. bisa masuk ke https://hub.docker.com/explore : untuk cari image yg ada.
+Docker Container adalah instance yang dijalankan dari sebuah Docker Image.
+
+=====================
+
+Dalam Docker, sebuah "instance" merujuk pada satu eksekusi atau realisasi nyata dari sebuah Docker Container. Jadi,
+instance adalah contoh konkret dari sebuah Container yang sedang berjalan.
+
 
 =======================
 
-2. bisa cek versinya di "TAG" nya
-
-=======================
