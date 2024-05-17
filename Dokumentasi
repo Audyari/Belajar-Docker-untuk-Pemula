@@ -1,16 +1,17 @@
-Menginstall Docker
+Arsitektur Docker
+
+======================
+
+Docker menggunakan arsitektur client-server, yang terdiri dari beberapa komponen utama:
+
+=========================
+
+Secara sederhana, alur kerja Docker adalah sebagai berikut:
+
+1.Docker Client mengirimkan perintah ke Docker Daemon(server).
+2.Daemon mengambil image yang diperlukan dari Docker Registry.
+3.Daemon kemudian membuat dan menjalankan kontainer berdasarkan image tersebut.
+4.Kontainer dapat saling terhubung melalui jaringan Docker.
+5.Volume dapat digunakan untuk menyimpan data persistent dari kontainer.
 
 =====================
-
-1. https://www.docker.com/products/docker-desktop/
-2.Unduh dan jalankan installer Docker Desktop untuk Windows
-3.Ikuti petunjuk instalasi dan jalankan Docker Desktop
-
-=============================
-
-comman di cmd untuk docker :
-
-1. docker info :
-2. docker version :
-
-============================
