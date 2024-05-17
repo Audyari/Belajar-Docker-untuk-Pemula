@@ -1,17 +1,22 @@
-Arsitektur Docker
+Container Registry
 
-======================
+=======================
 
-Docker menggunakan arsitektur client-server, yang terdiri dari beberapa komponen utama:
+ontainer Registry adalah tempat penyimpanan di mana Anda dapat menyimpan dan mengambil Docker image. 
 
 =========================
 
-Secara sederhana, alur kerja Docker adalah sebagai berikut:
+Beberapa contoh populer Container Registry adalah:
 
-1.Docker Client mengirimkan perintah ke Docker Daemon(server).
-2.Daemon mengambil image yang diperlukan dari Docker Registry.
-3.Daemon kemudian membuat dan menjalankan kontainer berdasarkan image tersebut.
-4.Kontainer dapat saling terhubung melalui jaringan Docker.
-5.Volume dapat digunakan untuk menyimpan data persistent dari kontainer.
+Docker Hub (layanan bawaan Docker)
+Amazon Elastic Container Registry (ECR)
+Google Container Registry
+Azure Container Registry
+Gitlab Container Registry
+Artifactory
 
-=====================
+============================
+
+1. registri ke https://hub.docker.com/ ....
+
+=============================
