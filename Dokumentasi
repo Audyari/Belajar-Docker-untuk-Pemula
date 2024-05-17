@@ -1,22 +1,11 @@
-Container Registry
+Image
+
+===================
+
+1. bisa masuk ke https://hub.docker.com/explore : untuk cari image yg ada.
 
 =======================
 
-ontainer Registry adalah tempat penyimpanan di mana Anda dapat menyimpan dan mengambil Docker image. 
+2. bisa cek versinya di "TAG" nya
 
-=========================
-
-Beberapa contoh populer Container Registry adalah:
-
-Docker Hub (layanan bawaan Docker)
-Amazon Elastic Container Registry (ECR)
-Google Container Registry
-Azure Container Registry
-Gitlab Container Registry
-Artifactory
-
-============================
-
-1. registri ke https://hub.docker.com/ ....
-
-=============================
+======================
