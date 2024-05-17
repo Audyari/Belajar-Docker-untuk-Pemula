@@ -1,10 +1,8 @@
-Menjalankan Container
+Menghapus Container
 
-========================
+=======================
 
-1. docker container start mongoserver1
+1. docker container rm mongoserver1
 2. docker container ls --all
-3. docker container exec -it mongoserver1 bash
 
-
-===================================
+===========================
